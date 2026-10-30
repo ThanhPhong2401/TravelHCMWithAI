@@ -114,7 +114,7 @@ namespace TravelHCMWithAI
 
             try
             {
-                string endpoint = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={apiKey}";
+                string endpoint = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={apiKey}";
 
                 // Prompt kịch bản cho AI đóng vai Trợ lý Du lịch TP.HCM
                 string systemPrompt = $"Bạn là Trợ lý AI du lịch TP.Hồ Chí Minh. Người dùng có sở thích: '{userPreferences}'. Hãy trả lời thân thiện, hữu ích và tập trung vào địa điểm/ẩm thực TP.HCM. Yêu cầu của người dùng: {userQuery}";
